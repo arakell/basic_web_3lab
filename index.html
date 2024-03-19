@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Личная страница</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+              <h1>Арина Сафронова</h1>
+        </header>
+
+        <section class="about_me">
+
+            <img src="resources/me.jpg" alt="me">
+            <span>Студентка 3 курса ФПМИ НГТУ</span>
+            <span></span>
+            <span>Успела поработать репетитором в нескольких онлайн-школах, дорасти до тимлида,
+                а сейчас прохожу стажировку на позиции разработчика </span>
+            <span></span>
+            <span>В этом семестре дозаполню github,
+                порешаю leetcode, подтяну теорию и буду в активном поиске работы. Интересует разработка веб-приложений, 
+                бэкенд
+            </span> 
+
+            <hr class="hr-line">
+
+        </section>
+
+        <section class="experience">
+
+            <div class="div1">
+                <span>РЕПЕТИТОР</span>
+                <img src="resources/arrow.png" alt="arrow">
+                <span>РАЗРАБОТЧИК</span>
+                <img src="resources/arrow.png" alt="arrow">
+                <span>???</span>
+            </div>
+
+            <div class="textcols">
+                <div class="textcols-row">
+                    <div class="textcols-item">
+                        <p>В школе "99 баллов" курировала более 50 учеников. Помимо объяснения материала, проверки ДЗ, большой частью работы были продажи и поддержка учеников. Спустя 4 месяца работы повысили до тимлида, следила за выполнением обязанностей своими кураторами, проводила мероприятия по повышению показателей продаж и повышению результатов учеников.
+                            Потом перешла в школу TutGood, где было уже репетиторство не в группе, а лично, в основном помогала наверстать программу тем, кто отстал от неё на 2-3 года</p>
+                    </div>
+                    <div class="textcols-item">
+                        <p>Прохожу стажировку в Экспобанке, изучаю новый язык, регламенты, знакомлюсь с оформлением заявок в jira, на данный момент в работе две реальные заявки по сопровождению, изучаю существующий код, исправляю ошибки</p>
+                    </div>
+                    <div class="textcols-item">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+
+            <div class="comments">
+                <h2 class="comments-title">Комментарии</h2>
+                <div id="comments-list"></div>
+                <form id="commentForm">
+                    <input type="text" id="authorInput" placeholder="Введите логин" required style="text-align: center"/><br />
+                    <textarea id="commentInput" placeholder="Введите ваш комментарий" required></textarea><br />
+                    <button id="button" type="button" class="button" onclick="sendComment()">Отправить</button><br />
+                    <script type="module" src="script.js"></script>
+                </form>
+            </div>
+            
+
+            <div class = "comments-list" id="comments-list">
+                
+            </div>
+
+        </section>
+        
+        <footer class="site-footer">
+
+            <p>© Арина Сафронова, 2023</p>
+
+            <a href="https://vk.com/cnthndl" target="_blank">
+                <img src="resources/tg.png" alt="telegram">
+            </a>
+            <a href="https://t.me/legrB" target="_blank">
+                <img src="resources/vk.png" alt="vk">
+            </a>
+            <a href="https://github.com/arakell" target="_blank">
+                <img src="resources/gh.png" alt="github">
+            </a>
+
+        </footer>
+
+
+    </body>
+
+
+</html>
